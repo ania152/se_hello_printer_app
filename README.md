@@ -17,6 +17,9 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   # zobacz
   $ pip list
   ```
+moze byc zamiast pip install zrobic make deps
+make lint
+make requirements
 
   Sprawdź: [tutorial venv](https://docs.python.org/3/tutorial/venv.html) oraz [biblioteki flask](http://flask.pocoo.org).
 
@@ -47,7 +50,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ```
   ...
 
-  # aktywacja 
+  # aktywacja
   $ source .venv/bin/activate
   ```
 
