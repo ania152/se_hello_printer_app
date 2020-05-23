@@ -11,8 +11,12 @@ run:
 	PYTHONPATH=. FLASK_APP=hello_world flask run
 test:
 	PYTHONPATH=. py.test --verbose -s
-	test_cov
-	test_xunit
+
+test_cov:
+	wywłanie coverage z wypisaniem raportu na ekran
+	
+test_xunit:
+	generacja xunit i coverage
 
 docker_build:
 	docker build -t hello-world-printer .
