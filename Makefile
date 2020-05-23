@@ -13,10 +13,10 @@ test:
 	PYTHONPATH=. py.test --verbose -s
 
 test_cov:
-	wywłanie coverage z wypisaniem raportu na ekran
-	
+	PYTHONPATH=. py.test --verbose -s --cov=.
+
 test_xunit:
-	generacja xunit i coverage
+	PYTHONPATH=. py.test -s --cov=. --cov-report xml --junit-xml=test_results.xml
 
 docker_build:
 	docker build -t hello-world-printer .
